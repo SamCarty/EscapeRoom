@@ -1,6 +1,7 @@
 // © 2018 ZargIndustries
 
 #include "PositionReport.h"
+#include "GameFramework/Actor.h"
 
 
 // Sets default values for this component's properties
@@ -11,6 +12,7 @@ UPositionReport::UPositionReport()
 	PrimaryComponentTick.bCanEverTick = true;
 
 	// ...
+	
 }
 
 
@@ -19,7 +21,9 @@ void UPositionReport::BeginPlay()
 {
 	Super::BeginPlay();
 
-	// ...
+	FString ObjectName = GetOwner()->GetName(); // Get object name from the world outliner
+	FString ObjectPos = GetOwner()->GetTransform().GetLocation().ToString();
+	UE_LOG(LogTemp, Warning, TEXT("%s is at %s"), *ObjectName, *ObjectPos); // print to Unreal console
 	
 }
 
