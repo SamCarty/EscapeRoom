@@ -26,4 +26,6 @@ EscapeRoom/Content/StarterContent/HDRI
 
 *.suo
 
-EscapeRoom/.vs/EscapeRoom/v15/ipch
+*.sln
+
+EscapeRoom/.vs
