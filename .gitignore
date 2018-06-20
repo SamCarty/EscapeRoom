@@ -24,4 +24,6 @@ EscapeRoom/Content/StarterContent/HDRI
 
 *.VC.opendb
 
+*.suo
+
 EscapeRoom/.vs/EscapeRoom/v15/ipch
